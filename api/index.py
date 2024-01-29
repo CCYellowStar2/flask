@@ -18,7 +18,9 @@ def redirect_based_on_location():
     
     if location_info["country_code"] == "CN":
         new_url = 'http://123.ccyacg.xyz' + request.full_path  # 拼接国内用户的新链接
+        print(new_url)
         return redirect(new_url, code=302)  # 302 重定向
     else:
         new_url = 'http://pan.ccyacg.xyz' + request.full_path  # 拼接国外用户的新链接
+        print(new_url)
         return redirect(new_url, code=302)  # 302 重定向
