@@ -24,6 +24,6 @@ def redirect_based_on_location():
         print(new_url)
         return redirect(new_url, code=302)  # 302 重定向
     else:
-        new_url = 'http://pan.ccyacg.xyz/1/' + name  # 拼接国外用户的新链接
+        new_url = 'https://pan.ccyacg.xyz/1/' + name  # 拼接国外用户的新链接
         print(new_url)
         return redirect(new_url, code=302)  # 302 重定向
